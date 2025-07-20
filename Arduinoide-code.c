@@ -21,7 +21,7 @@ void detectFlexSensors(int fvs[], sensors_event_t a) {
   else if (fvs[3] > 0 && fvs[4] > 65) {
     Serial.println("Peace");
   }
-  else if (a.acceleration.y > 2.5) {
+  else if (a.acceleration.y > 2.5) {s
     Serial.println("Well Done");
   }
   else if (fvs[0] == 1023 && fvs[1] == 1023 && fvs[2] == 1023) {
